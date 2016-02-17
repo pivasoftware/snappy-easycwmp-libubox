@@ -19,7 +19,9 @@
 #include <stdarg.h>
 #include "blob.h"
 
+#ifndef is_error
 #define is_error(obj) 0
+#endif
 
 #define BLOBMSG_ALIGN	2
 #define BLOBMSG_PADDING(len) (((len) + (1 << BLOBMSG_ALIGN) - 1) & ~((1 << BLOBMSG_ALIGN) - 1))

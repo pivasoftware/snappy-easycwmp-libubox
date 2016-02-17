@@ -27,7 +27,9 @@
 #include <getopt.h>
 #include "list.h"
 
+#ifndef is_error
 #define is_error(obj) 0
+#endif
 
 #define MAX_VARLEN	256
 
